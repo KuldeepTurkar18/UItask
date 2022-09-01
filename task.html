@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body{
+            counter-reset: Serial;  
+        }
+        .wpx-20{
+            width: 20px;
+        }
+        .hide{
+            display: none;
+        }
+        tbody tr td:nth-child(2):before{
+            counter-increment: Serial;
+            content: counter(Serial);
+        }
+    </style>
+</head>
+<body>
+    <div class="container py-5">
+     <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-center"><img class="img-fluid wpx-20 addone" src="img/plus.png" alt="plus"></th>
+                    <th contenteditable="true">Id</th>
+                    <th contenteditable="true">Name</th>
+                    <th contenteditable="true">Mobile</th>
+                    <th contenteditable="true">Emaild</th>
+                    <th></th>
+                </tr>
+            </thead>
+             <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td contenteditable="true">kumar</td>
+                    <td contenteditable="true">9934593842</td>
+                    <td contenteditable="true">example@gmail.com</td>
+                    <td><button class="btn table-remove btn-danger">Delete</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td contenteditable="true">kumar</td>
+                    <td contenteditable="true">9934593842</td>
+                    <td contenteditable="true">example@gmail.com</td>
+                    <td><button class="btn table-remove btn-danger">Delete</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td contenteditable="true">kumar</td>
+                    <td contenteditable="true">9934593842</td>
+                    <td contenteditable="true">example@gmail.com</td>
+                    <td contenteditable="true"><button class="btn table-remove btn-danger">Delete</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td contenteditable="true">kumar</td>
+                    <td contenteditable="true">9934593842</td>
+                    <td contenteditable="true">example@gmail.com</td>
+                    <td><button class="btn table-remove btn-danger">Delete</button></td>
+                </tr>
+                <tr class="hide">
+                    <td></td>
+                    <td></td>
+                    <td contenteditable="true">Add Name</td>
+                    <td contenteditable="true">Add Number</td>
+                    <td contenteditable="true">Add Email</td>
+                    <td>
+                        <button class="btn table-remove btn-danger">Delete</button>
+                    </td>
+                </tr>
+             </tbody>
+        </table>
+     </div>
+     <button id="export-btn" class="btn btn-primary">Export Data</button>
+     <p id="export"></p>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="js/custom.js"></script>
+</html>
